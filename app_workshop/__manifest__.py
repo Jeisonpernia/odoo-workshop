@@ -20,18 +20,20 @@
 ##############################################################################
 
 {
-    'name': 'App Default Date',
+    'name': 'App App',
     'version': '1.1',
     'author': 'Jeison Pernia <jeisonestudio@gmail.com>',
-    'category': 'Accounting & Finance',
+    'category': 'Workshop',
     'description': """
     """,
     'website': 'https://www.odoo.com/page/accounting',
     'depends' : ['base'],
-    'data': ['views/date_view.xml' ],
+    'data': [
+        'views/app_view.xml',
+        'security/ir.model.access.csv'
+    ],
     'demo': [],
     'installable': True,
     'auto_install': False,
 }
 
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
