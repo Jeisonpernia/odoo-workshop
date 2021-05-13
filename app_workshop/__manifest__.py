@@ -29,8 +29,9 @@
     'website': 'https://www.odoo.com/page/accounting',
     'depends' : ['base'],
     'data': [
+        'security/ir.model.access.csv',
         'views/app_view.xml',
-        'security/ir.model.access.csv'
+        'wizard/app_wizard_view.xml',
     ],
     'demo': [],
     'installable': True,

@@ -7,15 +7,15 @@
             <field name="model">app.file.wizard</field>
             <field name="arch" type="xml">
                 <form string="Download File">
-                    <div class="alert alert-info text-center" role="alert" style="margin-bottom:0px;">
-                        Se generado el Reporte correctamente, proceda a descargarlo.
+                    <field name="file_name" invisible="1"/>
+
+                    <div>
+                        <h2>Export Complete</h2>
+                        <p>Here is the exported report file: <field name="file" readonly="1" filename="file_name"/></p>
                     </div>
-                    <group>
-                        <field name="file" readonly="1" filename="file_name"/>
-                        <field name="file_name" invisible="1"/>
-                    </group>
+
                     <footer>
-                        <button string="Close" class="oe_link" special="cancel" />
+                        <button special="cancel" string="Close" type="object" class="btn-primary"/>
                     </footer>
                 </form>
             </field>

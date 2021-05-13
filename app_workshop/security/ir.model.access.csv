@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_app_app_user,app.app.user,model_app_app,,1,1,1,1
 access_app_line_user,app.line.user,model_app_line,,1,1,1,1
+access_app_file_wizard_user,app.file.wizard.user,model_app_file_wizard,,1,1,1,1
